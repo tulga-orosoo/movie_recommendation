@@ -19,8 +19,8 @@ const routes: Routes = [
   { path: 'sign-in', loadChildren: () => import('app/sign-in/sign-in.module').then(m => m.SignInModule) },
   { path: 'star/:id', loadChildren: () => import('app/star/star.module').then(m => m.StarModule) },
   { path: 'settings', component: SettingsComponent },
-  { path: '', redirectTo: '/movies/now-playing', pathMatch: 'full' },
-  { path: '**', redirectTo: '/movies/now-playing' }
+  { path: '', redirectTo: '/movies/discover', pathMatch: 'full' },
+  { path: '**', redirectTo: '/movies/discover' }
 ];
 
 @NgModule({
